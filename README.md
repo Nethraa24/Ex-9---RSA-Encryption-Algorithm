@@ -1,17 +1,18 @@
 # EX.9 SIMULATION OF RSA ALGORITHM
 
-## AIM:
+### AIM:
 To implement encryption and decryption using RSA algorithm.
 
-## ALGORITHM:
-1.Select 2 prime numbers p and q.              
-2.Calculate n and pi(n).              
-3.Choose small number e.         
-4.Calculate d.              
-5.Perform encryption and decryption and get the outputs correspondingly.
+### ALGORITHM:
+1. Select 2 prime numbers p and q.              
+2. Calculate n and pi(n).              
+3. Choose small number e.         
+4. Calculate d.              
+5. Perform encryption and decryption and get the outputs correspondingly.
 
 ## PROGRAM:
 
+```
 #include <stdio.h>
 #include <math.h>
 
@@ -25,7 +26,7 @@ int gcd(int a, int b) {
     return a;
 }
 
-// Function to calculate (base^exp) % mod using modular exponentiation
+  // Function to calculate (base^exp) % mod using modular exponentiation
 int mod_exp(int base, int exp, int mod) {
     int result = 1;
     base = base % mod;
@@ -41,7 +42,7 @@ int mod_exp(int base, int exp, int mod) {
     return result;
 }
 
-// Function to find the modular inverse using Extended Euclidean Algorithm
+   // Function to find the modular inverse using Extended Euclidean Algorithm
 int mod_inverse(int e, int phi_n) {
     int t = 0, new_t = 1;
     int r = phi_n, new_r = e;
@@ -109,8 +110,11 @@ int main() {
     return 0;
    
 }
+```
 
 ## OUTPUT:
-![alt text](<crypt ex 9.png>)
+![WhatsApp Image 2024-10-28 at 15 58 07_659644a9](https://github.com/user-attachments/assets/a9ba083b-e3d2-4c24-9c72-c2c82caa8d7a)
+
+
 ## RESULT:
    Hence, the simulation of RSA algorithm is successfully done.
